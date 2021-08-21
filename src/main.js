@@ -1,16 +1,14 @@
 // author: Yuebing
 
-// console.log alias print, defined by me.
-let print = console.log;
+const svgPath = document.querySelectorAll('path');
+console.log(svgPath);
 
-let element = document.querySelectorAll('path');
-
-const pathMove = anime({
-    targets: element,
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 1500,
-    delay: function(el, i) { return i * 250 },
-    direction: 'alternate',
-    loop: true
+const svgText = anime({
+  targets: svgPath,
+  loop: true,
+  direction: 'alternate',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 7000,
+  delay: (el, i) => { return i * 500 }
 });
