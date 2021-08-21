@@ -28,3 +28,7 @@ Temporary Items
 
 # package
 node_modules
+
+# parcel
+.cache
+dist
