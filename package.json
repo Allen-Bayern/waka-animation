@@ -1,0 +1,8 @@
+{
+  "name": "waka-animation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitee.com:allen_byn/waka-animation.git",
+  "author": "allen-byn <nobodyplay@yeah.net>",
+  "license": "MIT"
+}
