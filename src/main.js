@@ -1,5 +1,32 @@
 // author: Yuebing
 
+// 整个对象
+const wakaEl = document.querySelector('.waka');
+
+// hover函数
+const animateButton = (scale, duration, elasticity) =>{
+  anime.remove(wakaEl);
+  anime(
+    {
+      targets : wakaEl,
+      scale : scale,
+      duration : duration,
+      elasticity : elasticity
+    }
+  );
+};
+
+const enterButton = () =>{
+  animateButton(1.2, 800, 400);
+};
+
+const leaveButton = () => {
+  animateButton(1.0, 600, 300);
+};
+
+wakaEl.addEventListener('mouseenter', enterButton, false);
+wakaEl.addEventListener('mouseleave', leaveButton, false);
+
 // 所有字母
 const letterW = document.querySelector('.w');
 const letterA1 = document.querySelector('.a1');
@@ -39,10 +66,10 @@ const thumb = document.querySelector('.finger');
 const thumbMove = anime(
   {
     targets : thumb,
-    scale: [2, 1],
+    scale: [1, 1.2],
     loop: true,
     easing: 'linear',
-    duration: 2000,
+    duration: 1200,
     direction: 'alternate'
   }
 );
