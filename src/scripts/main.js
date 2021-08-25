@@ -1,17 +1,27 @@
 // author: Yuebing
-import anime from 'animejs/lib/anime.es.js';
-import {elements} from './allObjects.js';
 
-// 整个对象
-const wakaEl = elements.get('wrap');
+// all elements
+const elements = new Map();
+
+// add values
+elements.set('wrap', document.querySelector('.waka'));
+elements.set('logo', document.querySelector('svg'));
+elements.set('w', document.querySelector('.w'));
+elements.set('a2', document.querySelector('.a1'));
+elements.set('k', document.querySelector('.k'));
+elements.set('a1', document.querySelector('.a2'));
+elements.set('thumb', document.querySelector('.finger'));
+elements.set('characters', document.querySelector('.character'));
+
+//  -----------------------------------------------------------------
 
 // hover函数
 // 下方18行代码的作用是当鼠标靠近waka时，它能放大。离开时缩小
 const animateButton = (scale, duration, elasticity) =>{
-  anime.remove(wakaEl);
+  anime.remove(elements.get('wrap'));
   anime(
     {
-      targets : wakaEl,
+      targets : elements.get('wrap'),
       scale : scale,
       duration : duration,
       elasticity : elasticity
@@ -27,8 +37,10 @@ const leaveButton = () => {
   animateButton(1.0, 600, 300);
 };
 
-wakaEl.addEventListener('mouseenter', enterButton, false);
-wakaEl.addEventListener('mouseleave', leaveButton, false);
+elements.get('wrap').addEventListener('mouseenter', enterButton, false);
+elements.get('wrap').addEventListener('mouseleave', leaveButton, false);
+
+//  ----------------------------------------------------------------
 
 // 从天而降的数值
 const transy = [-100, 0];
@@ -65,15 +77,3 @@ tl.add({
     translateY: transy,
     direction: 'alternate',
 });
-
-// console.log(thumb);
-// const thumbMove = anime(
-//   {
-//     targets : thumb,
-//     scale: [1, 1.2],
-//     loop: true,
-//     easing: 'linear',
-//     duration: 1200,
-//     direction: 'alternate'
-//   }
-// );
