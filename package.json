@@ -6,6 +6,8 @@
   "author": "allen-byn <nobodyplay@yeah.net>",
   "license": "MIT",
   "dependencies": {
+    "animejs": "^3.2.1",
+    "jquery": "^3.6.0",
     "reset.css": "^2.0.2"
   }
 }
