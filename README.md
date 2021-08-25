@@ -4,10 +4,19 @@
 
 ## 展示方法：
 
-> 注：建议使用`yarn`进行包管理。
+若您使用`visual studio code`，则可以安装插件Live Server以展示。
 
-1. 安装parcel。使用`yarn`：`yarn global add parcel-bundler`；使用`npm`：`npm i -g parcel-bundler`；
-2. 然后`parcel build ./index.html`即可展示。
+图示：
+![Live Server](src/assets/live-server.png)
+
+安装完成后，在右下角会出现一个`Go Live`图标。、
+
+图示：
+![Go Live](src/assets/GoLive.png)
+
+点击即可展示。显示效果如下图：
+![show](src/assets/show.png)
+
 
 ## 参考：
 1. https://codepen.io/Paolo-Duzioni/pen/jvrxpL
