@@ -1,6 +1,5 @@
 // author: Yuebing
-import anime from 'animejs/lib/anime.es.js';
-import {elements} from './allObjects.js';
+import { elements } from './allObjects.js';
 
 // 整个对象
 const wakaEl = elements.get('wrap');
@@ -65,15 +64,3 @@ tl.add({
     translateY: transy,
     direction: 'alternate',
 });
-
-// console.log(thumb);
-// const thumbMove = anime(
-//   {
-//     targets : thumb,
-//     scale: [1, 1.2],
-//     loop: true,
-//     easing: 'linear',
-//     duration: 1200,
-//     direction: 'alternate'
-//   }
-// );

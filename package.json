@@ -6,8 +6,10 @@
   "author": "allen-byn <nobodyplay@yeah.net>",
   "license": "MIT",
   "dependencies": {
-    "animejs": "^3.2.1",
-    "jquery": "^3.6.0",
-    "reset.css": "^2.0.2"
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.0"
   }
 }
