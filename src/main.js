@@ -27,16 +27,6 @@ const leaveButton = () => {
 wakaEl.addEventListener('mouseenter', enterButton, false);
 wakaEl.addEventListener('mouseleave', leaveButton, false);
 
-// 点击即送
-const btn = document.querySelector('.myself');
-const wakasvg = document.querySelector('svg');
-const content = document.querySelector('#content');
-// console.log(wakasvg)
-btn.addEventListener('click', () => {
-  wakasvg.classList.remove('active');
-  content.classList.add('active');
-});
-
 // 所有字母
 const letterW = document.querySelector('.w');
 const letterA1 = document.querySelector('.a1');

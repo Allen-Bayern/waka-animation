@@ -16,22 +16,3 @@ body {
   width: 100%;
   justify-content: center;
 }
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  display: none;
-}
-.myself {
-  transform: translate(-145%, 100%);
-  padding: 0.5rem 0.75rem;
-  background: transparent;
-  border: 1px solid;
-  border-radius: 10%;
-  cursor: pointer;
-  outline: none;
-  z-index: 2;
-  font-size: 1em;
-}
