@@ -46,7 +46,7 @@ const transy = [-100, 0];
 // 使用timeline
 let tl = anime.timeline({
     easing: 'spring',
-    duration: 2500,
+    duration: 500,
     loop: true
 });
   
