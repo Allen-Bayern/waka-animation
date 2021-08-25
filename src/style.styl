@@ -1,3 +1,6 @@
+@import "./reset.css"
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700")
+
 body 
     height 100vh
     width 100%
@@ -6,8 +9,29 @@ body
     justify-content center 
     align-items center 
     align-content center
+    font-family Merriweather
+    font-size 16px
 
 .waka
     display flex
     width 100%
     justify-content center
+
+.container 
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+  text-align center
+  display none
+
+.myself
+    transform translate(-145%, 100%)
+    padding 0.5rem 0.75rem
+    background transparent
+    border 1px solid
+    border-radius 10%
+    cursor pointer
+    outline none
+    z-index 2
+    font-size 1em
