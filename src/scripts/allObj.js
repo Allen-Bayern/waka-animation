@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+exports.elements = void 0;
+var elements = new Map();
+exports.elements = elements;
+elements.set('wrap', document.querySelector('.waka'));
+elements.set('w', document.querySelector('.w'));
+elements.set('a2', document.querySelector('.a1'));
+elements.set('k', document.querySelector('.k'));
+elements.set('a1', document.querySelector('.a2'));
+elements.set('thumb', document.querySelector('.finger'));
+elements.set('characters', document.querySelector('.character'));

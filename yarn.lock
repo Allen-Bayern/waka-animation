@@ -901,6 +901,11 @@
     readdirp "^2.2.1"
     upath "^1.1.1"
 
+animejs@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.npm.taobao.org/animejs/download/animejs-3.2.1.tgz#de9fe2e792f44a777a7fdf6ae160e26604b0cdda"
+  integrity sha1-3p/i55L0Snd6f99q4WDiZgSwzdo=
+
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.nlark.com/ansi-styles/download/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"

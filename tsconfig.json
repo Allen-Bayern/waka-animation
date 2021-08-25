@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target" : "ES6",
+        "lib": ["ES2020", "DOM"],
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "noUnusedParameters": false
+    },
+    "files": [
+        "src/scripts/allObj.ts",
+        "src/scripts/main.ts",
+    ]
+}

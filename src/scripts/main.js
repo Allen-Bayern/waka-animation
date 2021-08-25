@@ -1,66 +1,58 @@
-// author: Yuebing
-import { elements } from './allObjects.js';
+"use strict";
 
-// 整个对象
-const wakaEl = elements.get('wrap');
-
+var allObj_1 = require("./allObj");
+var anime_es_js_1 = require("animejs/lib/anime.es.js");
 // hover函数
 // 下方18行代码的作用是当鼠标靠近waka时，它能放大。离开时缩小
-const animateButton = (scale, duration, elasticity) =>{
-  anime.remove(wakaEl);
-  anime(
-    {
-      targets : wakaEl,
-      scale : scale,
-      duration : duration,
-      elasticity : elasticity
-    }
-  );
+var animateButton = function (scale, duration, elasticity) {
+    anime_es_js_1["default"].remove(allObj_1.elements.get('wrap'));
+    anime_es_js_1["default"]({
+        targets: allObj_1.elements.get('wrap'),
+        scale: scale,
+        duration: duration,
+        elasticity: elasticity
+    });
 };
-
-const enterButton = () =>{
-  animateButton(1.2, 800, 400);
-};
-
-const leaveButton = () => {
-  animateButton(1.0, 600, 300);
-};
-
-wakaEl.addEventListener('mouseenter', enterButton, false);
-wakaEl.addEventListener('mouseleave', leaveButton, false);
-
+function enterButton() {
+    animateButton(1.2, 800, 400);
+}
+;
+function leaveButton() {
+    animateButton(1.0, 600, 300);
+}
+;
+allObj_1.elements.get('wrap').addEventListener('mouseenter', enterButton, false);
+allObj_1.elements.get('wrap').addEventListener('mouseleave', leaveButton, false);
 // 从天而降的数值
-const transy = [-100, 0];
-
+var transy = [-100, 0];
 // 使用timeline
-let tl = anime.timeline({
+var tl = anime_es_js_1["default"].timeline({
     easing: 'spring',
     duration: 5000,
     loop: true
 });
-  
 tl.add({
-    targets : elements.get('w'),
+    targets: allObj_1.elements.get('w'),
     translateY: transy,
-    direction: 'alternate',
+    direction: 'alternate'
 }).add({
-    targets: elements.get('a1'),
+    targets: allObj_1.elements.get('a1'),
     translateY: transy,
-    direction: 'alternate',
+    direction: 'alternate'
 }).add({
-    targets: elements.get('k'),
+    targets: allObj_1.elements.get('k'),
     translateY: transy,
-    direction: 'alternate',
+    direction: 'alternate'
 }).add({
-    targets: elements.get('a2'),
+    targets: allObj_1.elements.get('a2'),
     translateY: transy,
-    direction: 'alternate',
+    direction: 'alternate'
 }).add({
-    targets: elements.get('thumb'),
+    targets: allObj_1.elements.get('thumb'),
     translateY: transy,
-    direction: 'alternate',
+    direction: 'alternate'
 }).add({
-    targets: elements.get('characters'),
+    targets: allObj_1.elements.get('characters'),
     translateY: transy,
-    direction: 'alternate',
+    direction: 'alternate'
 });
