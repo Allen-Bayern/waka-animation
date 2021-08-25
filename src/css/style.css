@@ -1,4 +1,4 @@
-@import "./reset.css";
+@import "reset.css";
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
 body {
   height: 100vh;
