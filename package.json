@@ -9,5 +9,9 @@
     "animejs": "^3.2.1",
     "jquery": "^3.6.0",
     "reset.css": "^2.0.2"
+  },
+  "devDependencies": {
+    "cssnano": "^5.0.8",
+    "postcss": "^8.2.15"
   }
 }
