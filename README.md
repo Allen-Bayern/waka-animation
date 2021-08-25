@@ -9,12 +9,14 @@
 图示：
 ![Live Server](src/assets/live-server.png)
 
-安装完成后，在右下角会出现一个`Go Live`图标。、
+安装完成后，在右下角会出现一个`Go Live`图标。
 
 图示：
 ![Go Live](src/assets/GoLive.png)
 
+
 点击即可展示。显示效果如下图：
+
 ![show](src/assets/show.png)
 
 
