@@ -35,3 +35,6 @@ dist
 
 # yarn
 yarn-error.log
+
+# WebStorm
+.idea
